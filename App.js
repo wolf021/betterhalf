@@ -1,20 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import HomeScreen from './Screens/HomeScreen';
+import ProfileScreen from './Screens/ProfileScreen';
+import SettingScreen from './Screens/SettingScreen';
+import SearchScreen from './Screens/SearchScreen';
+import tw from 'tailwind-react-native-classnames';
+import LanguageScreen from './Screens/LanguageScreen';
+import AdvancedFiltersScreen from './Screens/AdvancedFiltersScreen';
+import InterestedScreen from './Screens/InterestedScreen';
+import BestMatches from './Screens/BestMatches';
+import ChatScreen from './Screens/ChatScreen';
+import RootNavigator from './Navigation/RootNavigator';
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{flex:1}}>
+     
+      <StatusBar style="auto"  />
+  <RootNavigator/>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
